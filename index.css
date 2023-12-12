@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(88, 84, 84);
+    color: rgb(190, 209, 82);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    padding: 15px;
+   
+}
+#dive{
+    border:5px;
+    border-color: rgb(0, 0, 0);
+    border-style: dashed;
+    border-radius: 15px;
+    border-width: 15px;
+}
+#display-el{
+    border:5px;
+    padding: 10px;
+    border-color: rgb(174, 158, 212);
+    border-style: solid;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    min-height: 39px;
+}
+/* #input-el{
+    background-color: black;
+    color: rgba(190, 209, 82);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    border:5px;
+    padding: 10px;
+    border-color: rgb(174, 158, 212);
+    border-style: solid;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    min-height: 39px;
+} */
+/* ::placeholder{
+    color: rgba(190, 209, 82, 0.603);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+} */
+#submit-btn{
+    height: auto;
+    width: auto;
+    border-style: ridge;
+    background: repeating-radial-gradient(closest-corner,rgb(190, 209, 82), rgb(174, 158, 212));
+    margin-bottom: 1px;
+    border-radius: 25px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    
+}
