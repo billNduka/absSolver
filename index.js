@@ -30,7 +30,7 @@ function expand(a,bx,n){
     clearInterval(appear)
     clearInterval(disappear)
     let expansion = ""
-    if (typeof(a) == "number" && typeof(bx) == "number"){
+    if (typeof(a) === "number" && typeof(bx) === "number"){
         for(i=0;i<=n;i++){
         expansion += combine(n,i)*(a**(n-i))*(bx**i) + `x<sup>${i}</sup>+ `
         }
@@ -39,7 +39,7 @@ function expand(a,bx,n){
     expansion = expansion.replace("<sup>1</sup>", " ")
     disp.innerHTML = expansion
     } else {
-        disp.innerHTML = "lol"
+        disp.innerHTML = "This web app can't compute variables yet"
     }
   
 }
