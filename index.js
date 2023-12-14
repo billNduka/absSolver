@@ -4,9 +4,9 @@ const appear = setInterval(() => {disp.innerHTML = "<b>_</b>"},1000)
 const disappear = setInterval(() => {disp.innerText = " "},2000)
 
 function solve(){
-    let a = Number(prompt("What is your a?"))
-    let b = Number(prompt("What is your b?"))
-    let n = Number(prompt("What is your n?"))
+    let a = prompt("What is your a?")
+    let b = prompt("What is your b?")
+    let n = prompt("What is your n?")
     expand(a,b,n)
 
 }
@@ -39,7 +39,6 @@ function expand(a,bx,n){
     expansion = expansion.replace("<sup>1</sup>", " ")
     disp.innerHTML = expansion
     } else {
-        disp.innerHTML = "This web app can't compute variables yet"
+        disp.innerHTML = "lol"
     }
-  
 }
