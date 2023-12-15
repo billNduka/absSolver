@@ -4,10 +4,15 @@ const appear = setInterval(() => {disp.innerHTML = "<b>_</b>"},1000)
 const disappear = setInterval(() => {disp.innerText = " "},2000)
 
 function solve(){
-    let a = prompt("What is your a?")
-    let b = prompt("What is your b?")
-    let n = prompt("What is your n?")
-    expand(a,b,n)
+    let a = Number(prompt("What is your a?"))
+    let b = Number(prompt("What is your b?"))
+    let n = Number(prompt("What is your n?"))
+    if(a !== NaN || b !== NaN || n !== NaN){
+        expand(a,b,n)
+    } else{
+        disp.innerHTML = "please use a number as your a, b or n"
+    }
+    
 
 }
 function factorial(n){
@@ -30,15 +35,11 @@ function expand(a,bx,n){
     clearInterval(appear)
     clearInterval(disappear)
     let expansion = ""
-    if (typeof(a) === "number" && typeof(bx) === "number"){
-        for(i=0;i<=n;i++){
-        expansion += combine(n,i)*(a**(n-i))*(bx**i) + `x<sup>${i}</sup>+ `
-        }
+    for(i=0;i<=n;i++){
+    expansion += combine(n,i)*(a**(n-i))*(bx**i) + `x<sup>${i}</sup>+ `}
     expansion = expansion.slice(0,-2)
     expansion = expansion.replace("x<sup>0</sup>", " ")
+    expansion = expansion.replace(" 1x", "x")
     expansion = expansion.replace("<sup>1</sup>", " ")
     disp.innerHTML = expansion
-    } else {
-        disp.innerHTML = "lol"
-    }
-}
+}   
