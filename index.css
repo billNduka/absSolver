@@ -23,7 +23,7 @@ body {
     height: auto;
     min-height: 39px;
 }
-/* #input-el{
+#input-el{
     background-color: black;
     color: rgba(190, 209, 82);
     font-family: 'Courier New', Courier, monospace;
@@ -34,14 +34,30 @@ body {
     border-style: solid;
     border-radius: 15px;
     width: auto;
+    margin-right: 0px;
     height: auto;
     min-height: 39px;
-} */
-/* ::placeholder{
-    color: rgba(190, 209, 82, 0.603);
+} 
+#input-sq{
+    background-color: black;
+    color: rgba(190, 209, 82);
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
-} */
+    border:2px;
+    padding: 1px;
+    border-color: rgb(174, 158, 212);
+    border-style: solid;
+    border-radius: 15px;
+    width: 52px;
+    margin-right: 0px;
+    height: auto;
+    min-height: 39px;
+}
+::placeholder{
+    color: rgba(190, 209, 82, 0.603);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+} 
 #submit-btn{
     height: auto;
     width: auto;
